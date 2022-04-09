@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-tch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-tch{
+    height: 300px;
+    width: 350px;
+    margin: 0 20px;
+    background: white;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.card-tch:hover{
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.card-tch .img-tch{
+    height: 200px;
+    width: 100%;
+}
+.card-tch .img-tch img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card-tch .top-text-tch{
+    text-align: center;
+    padding: 5px;
+}
+.card-tch .top-text-tch .name-tch{
+    margin-top: 13px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #202020;
+}
+.card-tch .top-text-tch p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #e74c3c;
+    line-height: 50px;
+}
+.card-tch .bottom-text-tch{
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+.card-tch:hover .bottom-text-tch{
+    opacity: 1;
+    visibility: visible;
+}
+.card-tch .bottom-text-tch .text-tch{
+    text-align: justify;
+}
+.card-tch .bottom-text-tch .btn-tch{
+    margin: 10px 0;
+    text-align: left;
+}
+.card-tch .bottom-text-tch .btn-tch a{
+    text-decoration: none;
+    background: #e74c3c;
+    color: #f2f2f2;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+}
+.card-tch .bottom-text-tch .btn-tch a:hover{
+    transform: scale(0.9);
+}
+@media screen and (max-width: 978px) {
+    .container-tch{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card-tch{
+        max-width: 700px;
+        margin: 20px 0;
+    }
+}
