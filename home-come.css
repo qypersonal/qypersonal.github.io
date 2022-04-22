@@ -1,0 +1,32 @@
+.button-home-come{
+	justify-content: center;
+	align-items: center;
+	float: left;
+	margin: 0 auto;
+	padding: var(--p) 60px;
+	margin: 20px;
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
+	text-decoration: none;
+	border-radius: 10px;
+	box-shadow: 0 0 10px var(--clr),
+	0 0 30px var(--clr),
+	0 0 60px var(--clr),
+	0 0 100px var(--clr);
+	background: var(--clr);
+}
+.button-home-come::after{
+	content: '';
+	inset:4px;
+	background: var(--clr);
+	position: absolute;
+	border-radius: 10px;
+}
+.button-home-come span{
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	letter-spacing: 4px;
+}

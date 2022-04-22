@@ -1,0 +1,58 @@
+.button-home{
+	justify-content: center;
+	align-items: center;
+	float: left;
+	background: #000;
+	padding: var(--p) 60px;
+	margin: 20px;
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
+	text-decoration: none;
+	border-radius: 10px;
+}
+.button-home:hover{
+	cursor: pointer;
+	box-shadow: 0 0 10px var(--clr),
+	0 0 30px var(--clr),
+	0 0 60px var(--clr),
+	0 0 100px var(--clr);
+	background: var(--clr);
+}
+.button-home::before{
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 400%;
+	background: var(--clr);
+	top: -150%;
+	animation: ans 3s linear infinite;
+	animation-delay: calc(0.53s * var(--i));
+}
+
+@keyframes ans{
+	0%{
+		transform: rotate(0deg);
+	}
+	0%{
+		transform: rotate(360deg);
+	}
+}
+
+.button-home::after{
+	content: '';
+	inset:4px;
+	background: #0e1538;
+	position: absolute;
+	border-radius: 10px;
+}
+.button-home:hover::after{
+	background: var(--clr);
+}
+.button-home span{
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	letter-spacing: 4px;
+}
