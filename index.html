@@ -1,83 +1,1665 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	
+<!DOCTYPE html>
+<html lang="zh-CN">
 	<head>
-	    <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <title>是吧？</title>
-	    <style>
-	        * {
-	            margin: 0;
-	            padding: 0;
-	        }
-	
-	        body {
-	            background: pink;
-	        }
-	
-	        .box {
-	            width: 120px;
-	            height: 120px;
-	            background: #ff0000;
-	            margin: 200px auto;
-	            margin-bottom: 80px;
-	            /* 盒子旋转45度 */
-	            transform: rotate(45deg) scale(0.9);
-	            /* 绑定动画 */
-	            animation: change 1s infinite;
-	            box-shadow: 0 0 30px 5px rgba(255, 0, 0, 0.7);
-	        }
-	
-	        .box::after,
-	        .box::before {
-	            content: "";
-	            position: absolute;
-	            width: 120px;
-	            height: 120px;
-	            background: #ff0000;
-	            border-radius: 50%;
-	            box-shadow: 0 0 30px 5px rgba(255, 0, 0, 0.7);
-	        }
-	
-	        .box::after {
-	            left: -68px;
-	        }
-	
-	        .box::before {
-	            top: -68px;
-	        }
-	
-	        /* 创建动画 */
-	        @keyframes change {
-	            0% {
-	                transform: rotate(45deg) scale(0.85);
-	            }
-	
-	            50% {
-	                transform: rotate(45deg) scale(1);
-	            }
-	
-	            100% {
-	                transform: rotate(45deg) scale(0.85);
-	            }
-	        }
-	
-	        p {
-	            text-align: center;
-	            font-size: 30px;
-	            font-weight: 520;
-	            color: rgba(255, 0, 0, 0.5);
-	            /* 文字阴影 */
-	            text-shadow: 0 0 2px rgba(255, 0, 0, 0.5);
-	        }
-	    </style>
-	</head>
-	
-	<body>
-	    <div class="box"></div>
-	    <p>也许，我喜欢的人是你呢？</p>
-		<p>是吧？墨墨~</p>
-	</body>
-	
-	</html>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="stylesheet" href="css/body.css">
+		<link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui/css/layui.css">
+		<link rel="stylesheet" href="css/teacher-style.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="home-wait.css">
+		<!-- <script>
+			if(!window.name){undefined			
+			window.name = 'test';			
+			}else{undefined			
+				window.open('index.html','_self')			
+			}
+		</script> -->
+		<!-- <style type='text/css'>
+			.div-teachers{
+				border-radius: 25px;
+				background: #e0e0e0;
+				box-shadow:  10px 10px 0px #a1a1a1,
+							-10px -10px 0px #ffffff;
+			}
+		</style> -->
+		<script>
+			(function(exports, d) {
+				var _isReady = false,
+				_event, _fns = [];
 
+				function onReady(event) {
+					d.removeEventListener("DOMContentLoaded", onReady);
+					_isReady = true;
+					_event = event;
+					_fns.forEach(function(_fn) {
+						var fn = _fn[0],
+						context = _fn[1];
+						fn.call(context || exports, window.jQuery);
+					});
+				}
+
+				function onReadyIe(event) {
+					if (d.readyState === "complete") {
+						d.detachEvent("onreadystatechange", onReadyIe);
+						_isReady = true;
+						_event = event;
+						_fns.forEach(function(_fn) {
+							var fn = _fn[0],
+							context = _fn[1];
+							fn.call(context || exports, event);
+						});
+					}
+				}
+
+				d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) || d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+				function domReady(fn, context) {
+					if (_isReady) {
+						fn.call(context, _event);
+					}
+
+					_fns.push([fn, context]);
+				}
+
+				exports.mesmerizeDomReady = domReady;
+			})(window, document);
+		</script>
+		<title>
+			永远的 &#8211; 801
+		</title>
+		<meta name='robots' content='max-image-preview:large' />
+		<script type="text/javascript">
+			/*! This file is auto-generated */
+			!
+			function(e, a, t) {
+				var n, r, o, i = a.createElement("canvas"),
+				p = i.getContext && i.getContext("2d");
+				function s(e, t) {
+					var a = String.fromCharCode;
+					p.clearRect(0, 0, i.width, i.height),
+					p.fillText(a.apply(this, e), 0, 0);
+					e = i.toDataURL();
+					return p.clearRect(0, 0, i.width, i.height),
+					p.fillText(a.apply(this, t), 0, 0),
+					e === i.toDataURL()
+				}
+				function c(e) {
+					var t = a.createElement("script");
+					t.src = e,
+					t.defer = t.type = "text/javascript",
+					a.getElementsByTagName("head")[0].appendChild(t)
+				}
+				for (o = Array("flag", "emoji"), t.supports = {
+					everything: !0,
+					everythingExceptFlag: !0
+				},
+				r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+					if (!p || !p.fillText) return ! 1;
+					switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+					case "flag":
+						return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
+					case "emoji":
+						return ! s([10084, 65039, 8205, 55357, 56613], [10084, 65039, 8203, 55357, 56613])
+					}
+					return ! 1
+				} (o[r]),
+				t.supports.everything = t.supports.everything && t.supports[o[r]],
+				"flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+				t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag,
+				t.DOMReady = !1,
+				t.readyCallback = function() {
+					t.DOMReady = !0
+				},
+				t.supports.everything || (n = function() {
+					t.readyCallback()
+				},
+				a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange",
+				function() {
+					"complete" === a.readyState && t.readyCallback()
+				})), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
+			} (window, document, window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+			img.wp-smiley, img.emoji { display: inline !important; border: none !important;
+			box-shadow: none !important; height: 1em !important; width: 1em !important;
+			margin: 0 0.07em !important; vertical-align: -0.1em !important; background:
+			none !important; padding: 0 !important; }
+		</style>
+		<style id='global-styles-inline-css' type='text/css'>
+			body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray:
+			#abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink:
+			#f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange:
+			#ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan:
+			#7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue:
+			#8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple:
+			#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1)
+			0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:
+			linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:
+			linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:
+			linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:
+			linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:
+			linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186)
+			40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:
+			linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:
+			linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62)
+			100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112)
+			0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:
+			linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181)
+			100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128)
+			0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129)
+			0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale:
+			url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red:
+			url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow:
+			url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green:
+			url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small:
+			13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large:
+			36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black)
+			!important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray)
+			!important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color:
+			var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color:
+			var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color:
+			var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color:
+			var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color:
+			var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color:
+			var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color:
+			var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color:
+			var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color:
+			var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color:
+			var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color:
+			var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color:
+			var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color:
+			var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color:
+			var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color:
+			var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color:
+			var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color:
+			var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color:
+			var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color:
+			var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color:
+			var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color:
+			var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color:
+			var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color:
+			var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color:
+			var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color:
+			var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color:
+			var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color:
+			var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color:
+			var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color:
+			var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color:
+			var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color:
+			var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color:
+			var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color:
+			var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:
+			var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:
+			var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:
+			var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange)
+			!important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:
+			var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:
+			var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background:
+			var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background:
+			var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background:
+			var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background:
+			var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background:
+			var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background:
+			var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background:
+			var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size:
+			var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size:
+			var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size:
+			var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size:
+			var(--wp--preset--font-size--x-large) !important;}
+		</style>
+		<link rel='stylesheet' id='mesmerize-parent-css' href='css/style.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='mesmerize-style-css' href='css/style-body.css' type='text/css' media='all' />
+		<style id='mesmerize-style-inline-css' type='text/css'>
+			img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
+			/** cached kirki style */@media screen and (min-width: 768px){.header{background-position:center
+			center;}}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide)
+			.background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.7;}.header-homepage-arrow{font-size:calc(
+			50px * 0.84 );bottom:20px;background:rgba(255,255,255,0);}.header-homepage-arrow
+			> i.fa{width:50px;height:50px;}.header-homepage-arrow > i{color:#ffffff;}.header-homepage
+			.header-description-row{padding-top:20%;padding-bottom:20%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}@media
+			screen and (max-width:767px){.header-homepage .header-description-row{padding-top:15%;padding-bottom:15%;}}@media
+			only screen and (min-width: 768px){.header-content .align-holder{width:80%!important;}.inner-header-description{text-align:center!important;}}
+		</style>
+		<link rel='stylesheet' id='mesmerize-style-bundle-css' href='css/theme.bundle.min.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='mesmerize-fonts-css' href="" data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext&#038;display=swap'
+		type='text/css' media='all' />
+		<script type='text/javascript' src='js/jquery.min.js' id='jquery-core-js'></script>
+		<script type='text/javascript' src='js/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+		<script type='text/javascript' id='jquery-js-after'>
+			(function() {
+				function setHeaderTopSpacing() {
+
+					setTimeout(function() {
+						var headerTop = document.querySelector('.header-top');
+						var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+						for (var i = 0; i < headers.length; i++) {
+							var item = headers[i];
+							item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+						}
+
+						var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+						if (languageSwitcher) {
+							languageSwitcher.style.top = "calc( " + headerTop.getBoundingClientRect().height + "px + 1rem)";
+						}
+
+					},
+					100);
+
+				}
+
+				window.addEventListener('resize', setHeaderTopSpacing);
+				window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing mesmerizeDomReady(setHeaderTopSpacing);
+			})();
+		</script>
+		<meta name="generator" content="WordPress 5.9.2" />
+		<link rel="canonical" href="https://78901.ml/" />
+		<link rel='shortlink' href='https://78901.ml/' />
+
+		<style data-name="header-overlap-with">
+			@media screen and (min-width: 768px) { .mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider)
+			.header-homepage { padding-bottom: 95px; } .mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider)
+			.page-content div[data-overlap]:first-of-type > div:not([class*="section-separator"])
+			{ margin-top: -95px; } }
+		</style>
+		<script type="text/javascript" data-name="async-styles">
+			(function() {
+				var links = document.querySelectorAll('link[data-href]');
+				for (var i = 0; i < links.length; i++) {
+					var item = links[i];
+					item.href = item.getAttribute('data-href')
+				}
+			})();
+		</script>
+		<link rel="icon" href="https://pic.imgdb.cn/item/625ff160239250f7c529d63e.png" />
+		<style id="page-content-custom-styles">
+			[data-id="about--1"] .overlay-box .overlay-box-offset{ transform:translate(15%,
+			5%); width:100%; height:100%; z-index:-1; }
+		</style>
+		<style data-name="background-content-colors">
+			.mesmerize-inner-page .page-content, .mesmerize-inner-page .content, .mesmerize-front-page.mesmerize-content-padding
+			.page-content { background-color: #ffffff; }
+		</style>
+	</head>
+	<body>
+		<style>
+			.screen-reader-text[href="#page-content"]:focus { background-color: #f1f1f1;
+			border-radius: 3px; box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); clip: auto
+			!important; clip-path: none; color: #21759b; }
+		</style>
+		<a class="skip-link screen-reader-text" href="#page-content">
+			Skip to content
+		</a>
+		<div id="page-top" class="header-top homepage">
+			<div class="navigation-bar homepage">
+				<div class="navigation-wrapper ">
+					<div class="row basis-auto">
+						<div class="logo_col col-xs col-sm-fit">
+							<a class="text-logo" data-type="group" data-dynamic-mod="true" href="https://www.78901.ml/">
+								Chen
+								<span style="font-weight: 300;" class="span12">
+									Ruoyu
+								</span>
+							</a>
+						</div>
+						<div class="main_menu_col col-xs">
+							<div id="mainmenu_container" class="row">
+								<ul id="main_menu" class="active-line-bottom main-menu dropdown-menu">
+									<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-31 current_page_item menu-item-74">
+										<a href="https://www.78901.ml/" aria-current="page">
+											首页
+										</a>
+									</li>
+									<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164">
+										<a href="">
+											公告栏
+										</a>
+									</li>
+									<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76">
+										<a target=_blank href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=k6ahoKOip6qqptPi4r3w-P4" style="text-decoration:none;">
+											资料上报
+										</a>
+									</li>
+									<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76">
+										<a href="#baocuo">
+											内容报错
+										</a>
+									</li>
+								</ul>
+							</div>
+							<a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper"
+							data-direction="right" data-width="300px" data-push="false">
+								<i class="layui-icon layui-icon-shrink-right"></i>
+							</a>
+							<div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+								<div class="offcanvas-top">
+									<div class="logo-holder">
+										<a class="text-logo" data-type="group" data-dynamic-mod="true" href="https://www.78901.ml/">
+											Chen
+											<span style="font-weight: 300;" class="span12">
+												Ruoyu
+											</span>
+										</a>
+									</div>
+								</div>
+								<div id="offcanvas-menu" class="menu-menu-container">
+									<ul id="offcanvas_menu" class="offcanvas_menu">
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-31 current_page_item menu-item-74">
+											<a href="https://www.78901.ml/" aria-current="page">
+												首页
+											</a>
+										</li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164">
+											<a href=" ">
+												公告栏
+											</a>
+										</li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76">
+											<a target=_blank href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=k6ahoKOip6qqptPi4r3w-P4" style="text-decoration:none;">
+												资料上报
+											</a>
+										</li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76">
+											<a href="#baocuo">
+												内容报错
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page" class="site">
+			<div class="header-wrapper">
+				<div class='header-homepage  color-overlay  header-full-height'>
+					<div class="header-description gridContainer content-on-center">
+						<div class="row header-description-row middle-sm">
+							<div class="header-content header-content-centered col-md col-xs-12">
+								<div class="align-holder center">
+									<h1 class="hero-title">
+										最 可 爱 的 我 们
+									</h1>
+									<p class="header-subtitle">
+										做最 “棒（pang）” 的自己！
+									</p>
+									<div data-dynamic-mod-container class="header-buttons-wrapper">
+										<a class="button big color1 round" target="_blank" href="mailto:523014995@qq.com?Subject=%E9%82%AE%E4%BB%B6%E6%A0%87%E9%A2%98">
+											联系我
+										</a>
+										<a title="关注我的微博，才能查看我们的班级圈哦~" class="button big color-white round outline" href="jump/jump-banjiquan.html" target="_blank">
+											班级圈
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div id="open-modal" class="modal-window">
+				<div>
+					<a href="#open-modal" class="modal-close">×</a>
+					<h1 class="modal-title">我 们 <a style="font-size: 70px; color: red;">毕 业</a> 啦 ！</h1>
+					<div class="modal-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天是2023年6月XX日，我们的故事在此刻画下完美的句号！<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时光如梭，白驹过隙，不知不觉间，你们渡过了初中三年的学习生活。三年来，你们在校园里留下了脚印，放飞了理想，挥洒了汗水，收成了但愿，带走了成熟，留下了回忆。在我们漫长的人生中，在此刻，我们仅仅点下了一个不起眼的逗号，让我们继续书写自己的人生。<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;春天，我们播下种子，充满希望。</div>
+				</div>
+			</div> -->
+			<div id='page-content' class="page-content">
+				<div class="content">
+					<div id="about-1" data-label="About" data-id="about-images-right-section-mc" data-export-id="about-images-right-section-mc" data-bullets-visibility="true" data-category="about">
+						<div class="gridContainer">
+							<div id="about">
+								<h3>关于我</h3>
+								<span class="underline1"></span>
+								<div class="tagBox">
+									<span>00后</span>
+									<span>SH</span>
+									<span>CRY</span>
+									<span>初中生</span>
+								</div>
+								<div class="aboutContent">
+									<p class="jianju">我是陈若愚。</p>
+									<p class="jianju">一位普普通通的初中生</p>
+									<p class="jianju">某知名视频站的不知名UP主</p>
+									<p class="jianju">强迫症、拖延症、懒癌晚期</p>
+									<p class="jianju">现就读于杭州市保俶塔申花实验学校</p>
+									<p class="jianju">成绩一般般。。</p>
+									<p class="jianju">曾学习多种编程语言</p>
+									<p class="jianju">包括计算机系统修复</p>
+									<p class="jianju">热衷钻研与计算机有关的一切：</p>
+									<p class="jianju">前端开发、影片制作、游戏模组...</p>
+									<p class="jianju">白日梦想：</p>
+									<p class="jianju">宅在家里过无忧无虑的生活</p>
+									<p class="jianju">请多指教！</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="content-2" style="background-color: #ffffff;" data-label="Content"
+					data-id="content-8-mc" data-export-id="content-8-mc" data-category="content"
+					class="content-8-mc content-section content-section-spacing">
+						<div class="gridContainer">
+							<div class="row middle-sm">
+								<div class="col-sm-6 space-bottom-xs space-top-xs" data-type="column">
+									<img class="shadow-large" src="https://fro.moe/wp-content/uploads/2021/08/potatocat-e1628671147358.gif"
+									title="potatocat" alt="">
+								</div>
+								<div class="col-sm-6" data-type="column">
+									<h2 class="">
+										……
+									</h2>
+									<p class="">
+										……
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div id="balancing" data-label="Balancing" data-id="about-images-right-section-mc" data-export-id="about-images-right-section-mc" data-bullets-visibility="true" data-category="about">
+						<div id="testimonials-1" style="background-color: #ffffff;" data-label="Testimonials"
+						data-id="testimonials-5-mc" data-export-id="testimonials-5-mc" data-category="testimonials"
+						class="testimonials-5-mc content-section content-section-spacing">
+							<div class="gridContainer">
+								<div class="row">
+									<div data-type="column" class="section-title-col">
+										<h5 class="">
+											好用的工具
+										</h5>
+										<h2 class="">
+											化 学 配 平
+										</h2>
+										<p class="lead">
+											Chemical balancing！
+										</p>
+									</div>
+								</div>
+								<div class="row middle-sm text-center">
+									<p>PS：化学是真的烦，为了方便，这是一个简单的配平工具~非常好用！100%正确！</p>
+								</div>
+								<iframe src="https://www.tooleyes.com/embed/chemistry_equation_balance.html" width="100%" height="450px;" scrolling="no" style="border:0px;"></iframe>
+							</div>
+						</div>
+					</div> -->
+					<!-- <div id="home" data-label="Home" data-id="about-images-right-section-mc" data-export-id="about-images-right-section-mc" data-bullets-visibility="true" data-category="about">
+						<div id="testimonials-1" style="background-color: #ffffff;" data-label="Testimonials"
+						data-id="testimonials-5-mc" data-export-id="testimonials-5-mc" data-category="testimonials"
+						class="testimonials-5-mc content-section content-section-spacing">
+							<div class="gridContainer">
+								<div class="row">
+									<div data-type="column" class="section-title-col">
+										<h5 class="">
+											期待你们的回归
+										</h5>
+										<h2 class="">
+											欢 迎 回 家
+										</h2>
+										<p class="lead">
+											Welcome home！
+										</p>
+									</div>
+								</div>
+								<div class="button-home" style="--clr:#ff22bb;--i:0;--p:20px;">
+									<span>关注我</span>
+								</div>
+								<div class="button-home" style="--clr:#ff22bb;--i:0;--p:20px;">
+									<span>关注我</span>
+								</div>
+								<div class="button-home" style="--clr:#ff22bb;--i:0;--p:20px;">
+									<span>关注我</span>
+								</div>
+								<div class="button-home" style="--clr:#ff22bb;--i:0;--p:20px;">
+									<span>关注我</span>
+								</div>
+								<div class="button-home" style="--clr:#ff22bb;--i:0;--p:20px;">
+									<span>关注我</span>
+								</div>
+								<div class="button-home" style="--clr:#ff22bb;--i:0;--p:20px;">
+									<span>关注我</span>
+								</div>
+								<div class="button-home" style="--clr:#ff22bb;--i:0;--p:20px;">
+									<span>关注我</span>
+								</div>
+								<div class="button-home" style="--clr:#ff22bb;--i:0;--p:20px;">
+									<span>关注我</span>
+								</div>
+								<div class="button-home" style="--clr:#ff22bb;--i:0;--p:20px;">
+									<span>关注我</span>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<div id="style" data-label="Style" data-id="about-images-right-section-mc" data-export-id="about-images-right-section-mc" data-bullets-visibility="true" data-category="about">
+						<div id="testimonials-1" style="background-color: #ffffff;" data-label="Testimonials"
+						data-id="testimonials-5-mc" data-export-id="testimonials-5-mc" data-category="testimonials"
+						class="testimonials-5-mc content-section content-section-spacing">
+							<div class="gridContainer">
+								<div class="row">
+									<div data-type="column" class="section-title-col">
+										<h5 class="">
+											来看看
+										</h5>
+										<h2 class="">
+											我 们 的 风 采
+										</h2>
+										<p class="lead">
+											We are family！
+										</p>
+									</div>
+								</div>
+								<div class="row middle-sm text-center">
+									<h3>701 的我们 - <strong>纯洁真挚！</strong></h3>
+									<p>我真的尽力在钉钉服务器中翻找了一遍又一遍！过期了嘛，我也没办法(╥╯^╰╥)</p>
+									<a target=_blank href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=k6ahoKOip6qqptPi4r3w-P4" style="text-decoration:none; margin: 0 0 4vh 0;">你有我想要的东西？赶快点这里上报给我吧~</a><br>
+								</div>
+								<div style="text-align: center; line-height: 1vh;">
+									<hr>
+									<h3>801 的我们 - <strong>拼尽全力！</strong></h3>
+									<iframe style='width: 600px;height: 338px; margin: 0 0 4vh 0;' frameborder='no' allowfullscreen mozallowfullscreen webkitallowfullscreen src='https://go.plvideo.cn/front/video/preview?vid=5a5d87ecd8e539de8c624f36594a0058_5'></iframe>
+									<hr>
+								</div>
+								<div class="row middle-sm text-center">
+									<h3>901 的我们 - <strong><a style="color: red;">云</a><a style="color: orange;">霓</a><a style="color: yellow;">之</a><a style="color: green;">望</a><a style="color: blue;">！</a></strong></h3>
+									<p>让我们拭目以待！在这最后的一年里~勇往直前！</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="about-us" data-label="About Us" data-id="about-images-right-section-mc" data-export-id="about-images-right-section-mc" data-bullets-visibility="true" data-category="about">
+					<div id="testimonials-1" style="background-color: #ffffff;" data-label="Testimonials"
+					data-id="testimonials-5-mc" data-export-id="testimonials-5-mc" data-category="testimonials"
+					class="testimonials-5-mc content-section content-section-spacing">
+						<div class="gridContainer">
+							<div class="row">
+								<div data-type="column" class="section-title-col">
+									<h5 class="">
+										那么
+									</h5>
+									<h2 class="">
+										我 们 的 大 家 庭
+									</h2>
+									<p class="lead">
+										点击查看详情~
+									</p>
+								</div>
+							</div>
+							<div class="row middle-sm text-center" style="margin: 0 0 15px 0;">
+								<h3>PS：我真的<strong> 很认真 </strong>的给每个人都写了一个个人页！</h3>
+								<p>当然也非常感谢雨啸的友情编写！ヾ(@^▽^@)ノ</p><br />
+								<p><strong><a style="color: rgb(255,0,0);">首</a><a style="color: rgb(255,165,0);">次</a><a style="color: rgb(255,255,0);">加</a><a style="color: rgb(0,255,0);">载</a><a style="color: rgb(0,127,255);">时</a><a style="color: rgb(0,0,255);">间</a><a style="color: rgb(139,0,255);">略</a><a style="color: rgb(255,0,0);">久</a><a style="color: rgb(255,165,0);">~</a><a style="color: rgb(255,255,0);">请</a><a style="color: rgb(0,255,0);">耐</a><a style="color: rgb(0,127,255);">心</a><a style="color: rgb(0,0,255);">等</a><a style="color: rgb(139,0,255);">待</a><a style="color: red;">1</a><a style="color: rgb(255,165,0);">~</a><a style="color: rgb(255,255,0);">10</a><a style="color: rgb(0,255,0);">秒</a><a style="color: rgb(0,127,255);">~</a></strong></p>
+							</div>
+							<div class="row spaced-cols content-center-sm" data-type="row">
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											班里最瘦的男孩纸
+											<br>
+											一个聪明的小学霸~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7327ac.jpg"
+										class="round icon">
+										<h6 class="">
+											蔡昕桓
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4" onclick="window.open('pages/CMZ/index.html')">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个沉默的女孩纸
+											<br>
+											试着用杭州话反着读她名字中最后两个字~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7328fb.jpg"
+										class="round icon">
+										<h6 class="">
+											陈墨真
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个对计算机感兴趣的男孩纸
+											<br>
+											他是程序员，不是黑客~
+										</p>
+										<img src="https://pic.imgdb.cn/item/623703bb5baa1a80ab8dab1a.jpg"
+										class="round icon">
+										<h6 class="">
+											陈若愚
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											爱玩游戏的男孩纸
+											<br>
+											篮球很帅哦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab73288d.jpg"
+										class="round icon">
+										<h6 class="">
+											池冠磊
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个可爱的男孩纸
+											<br>
+											被亲切的称呼为“大黄”
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab73285b.jpg"
+										class="round icon">
+										<h6 class="">
+											黄品锐
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个安静的女孩纸
+											<br>
+											有一个喜欢她的男孩纸！！（汪！）
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7329bb.jpg"
+										class="round icon">
+										<h6 class="">
+											梁可馨
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个普通的女孩纸
+											<br>
+											四个字的名字啦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732965.jpg"
+										class="round icon">
+										<h6 class="">
+											林潘奥妮
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个很爱做手工的男孩纸
+											<br>
+											上课捣鼓一些奇奇怪怪的东西~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7327be.jpg"
+										class="round icon">
+										<h6 class="">
+											刘畅
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个普通的女孩纸
+											<br>
+											是学习很不错的学习委员~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7329a2.jpg"
+										class="round icon">
+										<h6 class="">
+											李雨潼
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个疯狂的男孩纸
+											<br>
+											真的稀奇古怪~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab73283c.jpg"
+										class="round icon">
+										<h6 class="">
+											罗翊嘉
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个好问的男孩纸
+											<br>
+											总是会发出一些让人深思的问题~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab73284f.jpg"
+										class="round icon">
+										<h6 class="">
+											路沈承
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个游泳很厉害的男孩纸
+											<br>
+											国家二级运动员哦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732802.jpg"
+										class="round icon">
+										<h6 class="">
+											吕文韬
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个奇怪的男孩纸
+											<br>
+											额...蚂蚁啊~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7327d8.jpg"
+										class="round icon">
+										<h6 class="">
+											马义翔
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个斯文的男孩纸
+											<br>
+											名副其实的纪律委员~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732880.jpg"
+										class="round icon">
+										<h6 class="">
+											缪正睿
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个博学的男孩纸
+											<br>
+											一个小博士~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7327c7.jpg"
+										class="round icon">
+										<h6 class="">
+											莫钒
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个多才的女孩纸
+											<br>
+											有很多特长~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7329c8.jpg"
+										class="round icon">
+										<h6 class="">
+											邱诗涵
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个懵懂的女孩纸
+											<br>
+											傻傻傻傻哒~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7328ee.jpg"
+										class="round icon">
+										<h6 class="">
+											任紫瑜
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个“男性”的女孩纸
+											<br>
+											爱一个男孩纸能死去活来~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732914.jpg"
+										class="round icon">
+										<h6 class="">
+											阮佳雯
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个很高的男孩纸
+											<br>
+											哇！长颈鹿~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7328a1.jpg"
+										class="round icon">
+										<h6 class="">
+											孙悠翔
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个普通的男孩纸
+											<br>
+											喜欢一个女生啦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7328ab.jpg"
+										class="round icon">
+										<h6 class="">
+											汪麟和
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个斯文的女孩纸
+											<br>
+											学习真的很好~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7329d8.jpg"
+										class="round icon">
+										<h6 class="">
+											王雅璐
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个普通的女孩纸
+											<br>
+											额..真的没词啦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732990.jpg"
+										class="round icon">
+										<h6 class="">
+											王瑜涵
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个开放的女孩纸
+											<br>
+											总有一些“奇奇怪怪”的问题~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732928.jpg"
+										class="round icon">
+										<h6 class="">
+											吴锦怡
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个聪慧的男孩纸
+											<br>
+											他被好多女孩纸喜欢欸~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732815.jpg"
+										class="round icon">
+										<h6 class="">
+											邬量
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个普通的女孩纸
+											<br>
+											学习也还不错啦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab73297a.jpg"
+										class="round icon">
+										<h6 class="">
+											夏馨雨
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个疯狂的女孩纸
+											<br>
+											和姓吴的关系真的很好~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab73293c.jpg"
+										class="round icon">
+										<h6 class="">
+											谢佳凝
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个可爱的男孩纸
+											<br>
+											脾气有些暴躁啦（有一个喜欢的女孩纸）~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7327f5.jpg"
+										class="round icon">
+										<h6 class="">
+											杨仁镔
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个学霸级的男孩纸
+											<br>
+											百度上都是他的资料哦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732865.jpg"
+										class="round icon">
+										<h6 class="">
+											严雨啸
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个爱玩梗的男孩纸
+											<br>
+											最有趣的班长~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732894.jpg"
+										class="round icon">
+										<h6 class="">
+											应尚霖
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个普通的男孩纸
+											<br>
+											紧张会结巴哦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7328b8.jpg"
+										class="round icon">
+										<h6 class="">
+											张遂心
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个刚正不阿的男孩纸
+											<br>
+											好学好问啦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7327eb.jpg"
+										class="round icon">
+										<h6 class="">
+											张阳逸
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个嗲嗲的女孩纸
+											<br>
+											她的妈妈很严厉哦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732904.jpg"
+										class="round icon">
+										<h6 class="">
+											赵朗婕
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个胖胖的男孩纸
+											<br>
+											但是真的不是很讨人喜欢啦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732865.jpg"
+										class="round icon">
+										<h6 class="">
+											赵瑞丰
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个恬静的女孩纸
+											<br>
+											英语非常好哇~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7328d3.jpg"
+										class="round icon">
+										<h6 class="">
+											郑恬羿
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个普通的女孩纸
+											<br>
+											体育很棒~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732957.jpg"
+										class="round icon">
+										<h6 class="">
+											周佳杨
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个不错的女孩纸
+											<br>
+											体育不错啦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab7328bf.jpg"
+										class="round icon">
+										<h6 class="">
+											周馨然
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个会跳舞的女孩纸
+											<br>
+											是街舞吧..好吧没词了~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732932.jpg"
+										class="round icon">
+										<h6 class="">
+											周卓玥
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个可爱的男孩纸
+											<br>
+											救命！没词啦~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732821.jpg"
+										class="round icon">
+										<h6 class="">
+											周子涵
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card y-move bordered" data-type="column">
+										<p class="text-center">
+											一个清秀的女孩纸
+											<br>
+											除了体育，几乎是全才~
+										</p>
+										<img src="https://pic.imgdb.cn/item/6236f7105baa1a80ab732945.jpg"
+										class="round icon">
+										<h6 class="">
+											朱子涵
+										</h6>
+										<p class="small italic">
+											801班可爱的学生
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div id="our-teachers" data-label="Our Teachers" data-id="about-images-right-section-mc" data-export-id="about-images-right-section-mc" data-bullets-visibility="true" data-category="about">
+						<div id="testimonials-1" style="background-color: #ffffff;" data-label="Testimonials"
+						data-id="testimonials-5-mc" data-export-id="testimonials-5-mc" data-category="testimonials"
+						class="testimonials-5-mc content-section content-section-spacing">
+							<div class="gridContainer">
+								<div class="row">
+									<div data-type="column" class="section-title-col">
+										<h5 class="">
+											来看看
+										</h5>
+										<h2 class="">
+											我 们 的 恩 师
+										</h2>
+										<p class="lead">
+											Thank you!
+										</p>
+									</div>
+								</div>
+								<div class="row middle-sm text-center">
+									<p>说实话确实有点为难我啦~因为比较考验我的记忆</p><br>
+									<p>毕竟我们换了好几次老师了o((⊙﹏⊙))o</p><br>
+									<p>由于一些原因，部分老师的头像我找不到更清晰的了，如果你有他（她）们更清晰的照片</p><br>
+									<a target=_blank href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=k6ahoKOip6qqptPi4r3w-P4" style="text-decoration:none;margin: 0 0 4vh 0;">请点此联系我</a>
+									<hr>
+									<h3 style="margin: 0 0 4vh 0;">『 语文组 』</h3>
+								</div>
+								<div class="container-tch">
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">雷 婷</div>
+											<p>“妙 语 连 珠”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雷老师，一位真的很幽默风趣的语文老师，喜欢笑。</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">杨 晓 红</div>
+											<p>“老 练 从 容”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+								</div>
+								<div style="text-align: center; line-height: 1vh;">
+									<h3 style="margin: 4vh 0 4vh 0;">『 数学组 』</h3>
+								</div>
+								<div class="container-tch">
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">詹 胜 男</div>
+											<p>“无 话 不 谈”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">任 霄</div>
+											<p>“才 华 横 溢”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">段 朝 翠</div>
+											<p>“诙 谐 风 趣”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+								</div>
+								<div style="text-align: center; line-height: 1vh;">
+									<h3 style="margin: 4vh 0 4vh 0;">『 英语组 』</h3>
+								</div>
+								<div class="container-tch">
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">高 程 申</div>
+											<p>“威 风 凛 凛”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+								</div>
+								<div style="text-align: center; line-height: 1vh;">
+									<h3 style="margin: 4vh 0 4vh 0;">『 科学组 』</h3>
+								</div>
+								<div class="container-tch">
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">沈 轶 飞</div>
+											<p>“细 致 认 真”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">吴 佳 雯</div>
+											<p>“年 轻 有 为”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">郑 娟</div>
+											<p>“苦 口 婆 心”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+								</div>
+								<div style="text-align: center; line-height: 1vh;">
+									<h3 style="margin: 4vh 0 4vh 0;">『 社会组 』</h3>
+								</div>
+								<div class="container-tch">
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">张 兑 雨</div>
+											<p>“语 出 惊 人”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">吕 莹</div>
+											<p>“真 才 实 学”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+								</div>
+								<div style="text-align: center; line-height: 1vh;">
+									<h3 style="margin: 4vh 0 4vh 0;">『 美术组 』</h3>
+								</div>
+								<div class="container-tch">
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">蒋 剑 诚</div>
+											<p>“见 多 识 广”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+								</div>
+								<div style="text-align: center; line-height: 1vh;">
+									<h3 style="margin: 4vh 0 4vh 0;">『 音乐组 』</h3>
+								</div>
+								<div class="container-tch">
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">陆菲芸</div>
+											<p>“心 有 灵 犀”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+								</div>
+								<div style="text-align: center; line-height: 1vh;">
+									<h3 style="margin: 4vh 0 4vh 0;">『 体育组 』</h3>
+								</div>
+								<div class="container-tch">
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">蒋 飞</div>
+											<p>“慷 慨 大 方”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">李 言 飞</div>
+											<p>“热 衷 健 美”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+								</div>
+								<div style="text-align: center; line-height: 1vh;">
+									<h3 style="margin: 4vh 0 4vh 0;">『 信息组 』</h3>
+								</div>
+								<div class="container-tch">
+									<div class="card-tch">
+										<div class="img-tch">
+											<img src="">
+										</div>
+										<div class="top-text-tch">
+											<div class="name-tch">章 岷</div>
+											<p>“精 通 算 法”</p>               
+										</div>
+										<div class="bottom-text-tch">
+											<div class="text-tch">asdasdasdasdasdasdasdasd</div>
+											<!-- <div class="btn-tch">
+												<a href="#">helo</a>
+											</div> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="baocuo" style="background-color: #f5fafd;" data-label="Cta" data-id="cta-blue-section-mc" data-export-id="cta-blue-section-mc" data-category="cta" class="cta-blue-section-mc content-section content-section-spacing le_cocktail white-text">
+						<div class="gridContainer"> 
+							<div class="row middle-xs">
+								<div class="col-sm-8 space-bottom-xs" data-type="column"> 
+									<h2 style="color: #fff;">内容有误？</h2>
+									<h4 style="color: #fff;">来这里告诉我！</h4>
+									<p>毕竟能力有限，资料有问题的，请及时向我申报！</p>
+								</div> 
+								<div class="col-sm-4 end-sm" data-type="column"> 
+									<a class="button color2" target=_blank href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=k6ahoKOip6qqptPi4r3w-P4" style="text-decoration:none;" data-cp-link="1" rel="noopener">立即上报</a>
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='footer footer-simple'>
+				<div class='footer-content center-xs'>
+					<div class="gridContainer">
+						<div class="row middle-xs footer-content-row">
+							<div class="footer-content-col col-xs-12">
+								<p class="copyright">
+									© 2022 陈若愚
+									<a target="_blank" href="https://www.78901.ml/"
+									rel="nofollow" style="color:#0693e3" class="mesmerize-theme-link">
+										致 申花 1 班
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="side-navigation" class="side-navigation">
+			<ul data-type="active" data-preset="preset-2" data-after-scroll="true">
+				<li class="hero-bullet ">
+					<a href="#page-top">
+						Top
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script type='text/javascript' defer="defer" src='js/companion.bundle.min.js'
+		id='companion-bundle-js'>
+		</script>
+		<script type='text/javascript' defer="defer" src='js/imagesloaded.min.js'
+		id='imagesloaded-js'>
+		</script>
+		<script type='text/javascript' defer="defer" src='js/masonry.min.js'
+		id='masonry-js'>
+		</script>
+		<script type='text/javascript' defer="defer" src='js/mesmerize.theme.js'
+		id='mesmerize-theme-js'>
+		</script>
+		<script type='text/javascript' src='js/theme-child.js'
+		id='theme-child-js'>
+		</script>
+		<script type='text/javascript' id='mesmerize-theme-js-extra'>
+			/* <![CDATA[ */
+			var mesmerize_backstretch = {"images":["https://pic.imgdb.cn/item/6236d2985baa1a80ab239966.jpg"],"duration":"3000","transitionDuration":"1000","animateFirst":""};
+			/* ]]> */
+		</script>
+		<script>
+			/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange",
+			function() {
+				var t, e = location.hash.substring(1);
+				/^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+			},
+			!1);
+		</script>
+		<script src="js/model.js"></script>
+
+		<script style="overflow:hidden">
+			swal('永远的申花1班！','\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0我是申花一班的陈若愚，一个普通的中学生\n\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa02022年3月20日，一个不成熟的想法在我脑中诞生：“我们还有一年就要毕业了，我能不能做些什么为大家留下初中阶段美好的回忆呢？”于是现在你们所看到的就是我花费一年时间做的网站。\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0说实话，我毕生所学的编程语言说多不多，说少不少，但都是博而不精、一知半解。本次网站用到的三门编程语言：HTML5、CSS3和Javascript也并非完全掌握。但是，我真的很努力的把它做到了最好、做到了极致。我想过很长时间，不知道在毕业时怎么让大家知道这个网站。。。但是不管怎样，你们现在肯定已经知道了。是聚在一起也好，还是在群里面了解也罢，我们都将记住这三年来的点点滴滴。那么就让我们来看看，参与制作的都有哪些人。\n\n制作人员名单：\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0网站布局：陈若愚\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0CSS布局：陈若愚、是柚子鸭\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0CSS动画：陈若愚、是柚子鸭\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0Javascript：是柚子鸭、我是阿特\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0美术指导：酱柒柒、樱桃奶球\n\n特别鸣谢：\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0严雨啸：同学、老师评价介绍\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0路沈承：老师、同学照片提供\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0XXX：XXXXXXXX\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0XXX：XXXXXXXXXX\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0XXX：XXXXXX\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0与我一起，见证了这个网站一年以来的成长！\n\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0好好收藏一切美丽，包括“离别”，窖藏所有的记忆，2023年6月XX日，让我们一起开封！后会有期！','success'); function AddFavorite(title, url) {
+			try {
+				window.external.addFavorite(url, title);
+			}
+			catch (e) {
+				try {
+				window.sidebar.addPanel(title, url,);
+				}
+				catch (e) {
+					alert("抱歉，您所使用的浏览器无法完成此操作。");
+				}
+			}
+			}
+		</script>
+	</body>
+</html>
