@@ -41,7 +41,7 @@
 	--b-alpha-80:rgba(0,0,0,.8);
 	--b-alpha-90:rgba(0,0,0,.9)
 }
-/*
+
 html {
 	filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 	-webkit-filter:grayscale(100%);
@@ -51,7 +51,7 @@ html {
 	filter:grayscale(100%);
 	filter:gray
 }
-*/	
+
 .jianju{
 	line-height: 15px;
 	color: #727272;
