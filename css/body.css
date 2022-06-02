@@ -42,7 +42,7 @@
 	--b-alpha-90:rgba(0,0,0,.9)
 }
 
-html {
+/* html {
 	filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 	-webkit-filter:grayscale(100%);
 	-moz-filter:grayscale(100%);
@@ -50,7 +50,7 @@ html {
 	-o-filter:grayscale(100%);
 	filter:grayscale(100%);
 	filter:gray
-}
+} */
 
 .jianju{
 	line-height: 15px;
