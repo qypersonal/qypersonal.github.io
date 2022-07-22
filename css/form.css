@@ -1,50 +1,78 @@
-* {
-	/* 页面初始化 清除元素的内外边距 */
-	padding: 0;
-	margin: 0;
-	/* 盒子模型 */
-	box-sizing: border-box;
-}
 #form{
-	/* 弹性布局 让页面元素垂直+水平居中 */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* 让页面高度占浏览器可视区域的高度 */
-	height: 100%;
-	background-color: #ffffff;
-}
-.container-form {
-	/* 溢出隐藏 */
-	overflow: hidden;
-	/* 外边距 上下为0  左右为20px */
-	margin: 0 20px;
-	background-color: #fff;
-	/* 盒子阴影 */
-	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-}
-.container-form table {
-	/* 让表格的边框合并在一起 */
-	border-collapse: collapse;
-}
-/* 在做pc端 不注释掉看不到效果 */
-.container-form table thead tr th {
-	color: #fff;
-	background-color: #4fc3a1;
-}
-/* 还是取单数 */
-.container-form table thead tr th:nth-child(odd) {
-	background-color: #324960;
-}
-.container-form table thead tr th,
-.container-form table tbody tr td {
+	color: black;
 	text-align: center;
-	/* 先不加 大屏就正常了 */
-	padding: 20px 40px;
 }
-.container-form table tbody tr td {
-	border: 1px solid rgb(200, 200, 200);
+
+.container-form {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
 }
-.container-form table tbody tr:nth-child(odd) {
-	background-color: #f8f8f8;
+/* h2 {
+	font-size: 26px;
+	margin: 20px 0;
+	text-align: center;
 }
+h2 small {
+	font-size: 0.5em;
+} */
+
+.responsive-table li {
+	border-radius: 3px;
+	padding: 25px 30px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+.responsive-table .table-header {
+	background-color: rgba(104,208,235);
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+.responsive-table .table-row {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+}
+.responsive-table .col-1 {
+	flex-basis: 20%;
+}
+.responsive-table .col-2 {
+	flex-basis: 70%;
+}
+.responsive-table .col-3 {
+	flex-basis: 30%;
+}
+.responsive-table .col-4 {
+	flex-basis: 30%;
+}
+.responsive-table .col-5 {
+	flex-basis: 30%;
+}
+@media all and (max-width: 767px) {
+	.responsive-table .table-header {
+		display: none;
+   }
+	.responsive-table li {
+		display: block;
+   }
+	.responsive-table .col {
+		flex-basis: 100%;
+   }
+	.responsive-table .col {
+		display: flex;
+		padding: 10px 0;
+   }
+	.responsive-table .col:before {
+		color: #6c7a89;
+		padding-right: 10px;
+		content: attr(data-label);
+		flex-basis: 50%;
+		text-align: right;
+   }
+}
+
