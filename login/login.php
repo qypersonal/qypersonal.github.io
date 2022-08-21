@@ -25,7 +25,7 @@ else if($result->num_rows > 0){
     $row = $result->fetch_row();
     $db_userpwd = $row[0];
     if($db_userpwd==$userPwd){
-        echo '欢迎用户'.$username1.'登录';
+        echo "<script>window.location.href='index.php'</script>";
     }else{
         echo '<script>alert("账号或密码错误"); history.go(-1);</script>';
     }

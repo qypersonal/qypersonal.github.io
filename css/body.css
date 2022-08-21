@@ -8,6 +8,17 @@
 	-ms-overflow-style: none;
 }
 
+#about-me {
+	background-color: #fff;
+}
+
+#about-me h3{
+	font-size: 30px;
+	font-weight: bolder;
+	color: var(--txt-b-pure);
+	transition: .25s
+}
+
 :root {
 	--theme-color:#00c0da;
 	--theme-color-active:rgba(112,192,0,.6);
@@ -54,8 +65,8 @@
 
 .jianju{
 	line-height: 15px;
-	color: #727272;
-	font-size:15px
+	color: var(--txt-b-tip);
+	font-size:15.5px
 }
 #topBg {
 	z-index:-100;
@@ -104,7 +115,7 @@
 	transition:.25s
 }
 #about,#log {
-	background-color:var(--bg-w-pure)
+	background-color:#ffffff
 }
 .tagBox {
 	position:relative;
