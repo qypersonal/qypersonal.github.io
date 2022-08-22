@@ -15,6 +15,9 @@
 		<link rel="stylesheet" href="style-photowall.css">
 		<SCRIPT SRC="js/button.js"></script>
 		<link rel="stylesheet" href="css/button.css"></head> 
+		<link rel="stylesheet" href="css/modal.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script>
             function IsPC(){  
                 var userAgentInfo = navigator.userAgent;
@@ -416,9 +419,39 @@
 										做最 “棒（pang）” 的自己！
 									</p>
 									<div data-dynamic-mod-container class="header-buttons-wrapper">
-										<a class="button big color1 round" target="_blank" href="mailto:523014995@qq.com?Subject=%E9%82%AE%E4%BB%B6%E6%A0%87%E9%A2%98">
+										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="myModalLabel">
+															关注我们！
+														</h4>
+													</div>
+													<div class="modal-body">
+														<p style="color: black;"><strong>微信公众号：</strong></p>
+														<p style="text-align: left;padding-left: 20px;line-height: 10px;">1、网站的任何变动都将在公众号内第一时间发布~</p>
+														<p style="text-align: left;padding-left: 20px;line-height: 10px;">2、用于查找同学、老师联系方式</p>
+														<p style="text-align: left;padding-left: 20px;line-height: 10px;color: rgb(255, 153, 0);"><strong>3、来查看属于你们的毕业信</strong></p>
+														<img src="https://pic.imgdb.cn/item/6303417216f2c2beb1f16d59.png" alt="">
+														<p style="color: black;"><strong>我的微信：</strong></p>
+														<p style="text-align: left;padding-left: 20px;line-height: 10px;">1、有任何资料或者照片可向我提供</p>
+														<p style="text-align: left;padding-left: 20px;line-height: 10px;">2、信息有误向我申报</p>
+														<p style="text-align: left;padding-left: 20px;line-height: 10px;color: rgb(255, 153, 0);"><strong>3、和我聊天！！！</strong></p>
+														<img src="https://pic.imgdb.cn/item/630357ba16f2c2beb1017c10.png" alt="">
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-primary" data-dismiss="modal">关闭
+														</button>
+													</div>
+												</div><!-- /.modal-content -->
+											</div><!-- /.modal -->
+										</div>
+										<button class="button big color1 round" data-toggle="modal" data-target="#myModal">
+											公众号
+										</button>
+										<!-- <a class="button big color1 round" target="_blank" href="mailto:523014995@qq.com?Subject=%E9%82%AE%E4%BB%B6%E6%A0%87%E9%A2%98">
 											联系我
-										</a>
+										</a> -->
 										<a title="关注我的微博，才能查看我们的班级圈哦~" class="button big color-white round outline" href="jump/jump-banjiquan.html" target="_blank">
 											班级圈
 										</a>
