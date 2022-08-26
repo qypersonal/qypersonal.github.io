@@ -86,7 +86,7 @@ a{
   left: 50%;
   top: 0px;
   transform: translateX(-50%);
-  background-color: #ff0000;
+  background-color: #c0c0c0;
   border-radius: 0px 0px 10px 10px;
 }
 .nav{
