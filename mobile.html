@@ -18,6 +18,8 @@
 		<link rel="stylesheet" href="css/modal-mb.css">
 		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- css动画库 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <script>
             function IsPC(){  
                 var userAgentInfo = navigator.userAgent;
@@ -304,7 +306,7 @@
 				}
 			})();
 		</script>
-		<link rel="icon" href="https://s1.ax1x.com/2022/07/21/jLwxL4.png" />
+		<link rel="icon" href="https://pic.imgdb.cn/item/632ef13316f2c2beb121a42a.png" />
 		<style id="page-content-custom-styles">
 			[data-id="about--1"] .overlay-box .overlay-box-offset{ transform:translate(15%,
 			5%); width:100%; height:100%; z-index:-1; }
@@ -313,6 +315,35 @@
 			.mesmerize-inner-page .page-content, .mesmerize-inner-page .content, .mesmerize-front-page.mesmerize-content-padding
 			.page-content { background-color: #ffffff; }
 		</style>
+		<!-- css动画延迟部分 -->
+		<!-- 首页第一张 -->
+		<style>
+			.ycsy1 {
+				/*重要设置为both*/
+				animation-fill-mode: both;
+				animation-delay: 1s;				
+				/*重要设置为both*/
+				-webkit-animation-fill-mode: both;
+				-webkit-animation-delay: 1s;
+			}
+			.ycsy2 {
+				/*重要设置为both*/
+				animation-fill-mode: both;
+				animation-delay: 1.6s;				
+				/*重要设置为both*/
+				-webkit-animation-fill-mode: both;
+				-webkit-animation-delay: 1.6s;
+			}
+			.ycsy3 {
+				/*重要设置为both*/
+				animation-fill-mode: both;
+				animation-delay: 1.8s;				
+				/*重要设置为both*/
+				-webkit-animation-fill-mode: both;
+				-webkit-animation-delay: 1.8s;
+			}
+		</style>
+		<!-- 首页第一张结束 -->
 	</head>
 	<body>
 		<style>
@@ -412,10 +443,10 @@
 						<div class="row header-description-row middle-sm">
 							<div class="header-content header-content-centered col-md col-xs-12">
 								<div class="align-holder center">
-									<h1 class="hero-title">
+									<h1 class="hero-title dream" data-animate="fadeInUp,1s,linear">
 										最 可 爱 的 我 们
 									</h1>
-									<p class="header-subtitle">
+									<p class="header-subtitle ycsy1 dream" data-animate="fadeInUp,1s,linear">
 										做最 “棒（pang）” 的自己！
 									</p>
 									<div data-dynamic-mod-container class="header-buttons-wrapper">
@@ -446,13 +477,13 @@
 												</div><!-- /.modal-content -->
 											</div><!-- /.modal -->
 										</div>
-										<button class="button big color1 round" data-toggle="modal" data-target="#myModal">
+										<a class="button big color1 round dream ycsy2" data-toggle="modal" data-target="#myModal" data-animate="fadeInDown,1s,linear">
 											公众号
-										</button>
+										</a>
 										<!-- <a class="button big color1 round" target="_blank" href="mailto:523014995@qq.com?Subject=%E9%82%AE%E4%BB%B6%E6%A0%87%E9%A2%98">
 											联系我
 										</a> -->
-										<a title="关注我的微博，才能查看我们的班级圈哦~" class="button big color-white round outline" href="jump/jump-banjiquan.html" target="_blank">
+										<a title="关注我的微博，才能查看我们的班级圈哦~" class="button big color-white round outline dream ycsy3" href="jump/jump-banjiquan.html" data-animate="fadeInDown,1s,linear" target="_blank">
 											班级圈
 										</a>
 									</div>
@@ -3067,5 +3098,46 @@
 			}
 			}
 		</script> -->
+		<script>
+			// 获取浏览器可见区域高度
+			var window_height = document.documentElement.clientHeight;
+			// 用户手动修改浏览器可见区域高度时修改变量
+			window.onresize = function () {
+				window_height = document.documentElement.clientHeight;
+			};
+			// 获取所需效果元素
+			var My_dream = document.getElementsByClassName('dream');
+			// 鼠标滚轮滚动执行方法
+			window.onscroll = function () {
+				my_animation()
+			};
+			// 用于第一屏没有滚动滚动条时触发一下
+			my_animation();
+		
+			// 判断元素父集是否有已定位元素
+			function getOffsetTop(ele) {
+				var rtn = ele.offsetTop;
+				var o = ele.offsetParent;
+				while (o != null) {
+					rtn += o.offsetTop;
+					o = o.offsetParent;
+				}
+				return rtn;
+			}
+		
+			// 滚动条等于0时执行第一屏效果
+			function my_animation() {
+				var _scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+				// 效果方法
+				for (var k = 0; k < My_dream.length; k++) {
+					if (_scrollTop >= getOffsetTop(My_dream[k]) - window_height && _scrollTop <= getOffsetTop(My_dream[k])) {
+						My_dream[k].style.animationName = My_dream[k].dataset.animate.split(',')[0];
+						My_dream[k].style.animationDuration = My_dream[k].dataset.animate.split(',')[1];
+						My_dream[k].style.animationTimingFunction = My_dream[k].dataset.animate.split(',')[2];
+						My_dream[k].style.animationDelay = My_dream[k].dataset.animate.split(',')[3];
+					}
+				}
+			}
+		</script>
 	</body>
 </html>
