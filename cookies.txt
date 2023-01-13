@@ -1,0 +1,11 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+ui.ptlogin2.qq.com	TRUE	/	FALSE	1999999999	pt_user_id	15137883653339976542
+ptlogin2.qq.com	TRUE	/	FALSE	1999999999	pt_login_sig	tM1NVB*1Tkl-0lHuZhQeU7NcYFujWrhfrWxf4m-k3wU4cIkWFX4M7ueBvUJ-UXn2
+ptlogin2.qq.com	TRUE	/	FALSE	1999999999	pt_clientip	3e897d78669b24d0
+ptlogin2.qq.com	TRUE	/	FALSE	1999999999	pt_serverip	a2e00995827458a3
+ui.ptlogin2.qq.com	TRUE	/	FALSE	1999999999	login_param	style%3D9%26appid%3D522005705%26s_url%3Dhttps%253A%252F%252Fwap.mail.qq.com%252Flogin%252Flogin%253Fauth_type%253D3%26daid%3D4%26hln_css%3Dhttps%253A%252F%252Fmail.qq.com%252Fzh_CN%252Fhtmledition%252Fimages%252Flogo%252Fqqmail%252Fqqmail_logo_default_200h.p
+ptlogin2.qq.com	TRUE	/	FALSE	1999999999	uikey	ebfb583d36b46ca25f0ace6f2adab2b5e8496221e49d28de0729b24f1e4a6d6f
+ui.ptlogin2.qq.com	TRUE	/	FALSE	1999999999	ptui_identifier	000D29407FA47DC6E20C84E169A62501157E8A6D6CF87A20320B36D6B3
+ui.ptlogin2.qq.com	TRUE	/	FALSE	1999999999	SameSite	None
+
