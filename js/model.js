@@ -157,7 +157,7 @@ function() {
         }),
         a = Object.assign({},
         r, {
-            text: "有缘再见！",
+            text: "我知道了",
             value: !0
         });
         e.defaultButtonList = {
