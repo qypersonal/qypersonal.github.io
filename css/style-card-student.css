@@ -162,8 +162,30 @@ a{
   transform: scale(1.01);
   transition: all ease 0.1s;
 }
-@media(max-width:612px){
+/* @media(max-width:612px){
   .box{
       flex-grow: 0.7;
+  }
+} */
+@media(max-width: 612px){
+  .box{
+    width: 45%;
+    margin: 2.5%;
+  }
+  .details {
+    font-size: 0.8rem;
+  }
+  .details strong{
+    font-size: 1rem;
+  }
+  .details p{
+    font-size: 0.9rem;
+  }
+  .details img {
+    width: 80px;
+    height: 80px;
+  }
+  .nav img {
+    width: 40px;
   }
 }
