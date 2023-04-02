@@ -167,7 +167,7 @@ a{
       flex-grow: 0.7;
   }
 } */
-@media(max-width: 612px){
+@media(max-width: 630px){
   .box{
     width: 45%;
     margin: 2.5%;
